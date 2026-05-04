@@ -51,7 +51,7 @@ You need to install [Gurobi](https://www.gurobi.com) to run the exact solvers.
 
 ## Usage
 
-To run an algorithm or generate a testfile, use the provided bash scripts. The data from the exact solvers is saved in the csv-file `progress_data.csv`. 
+To run an algorithm or generate a testfile, use the provided bash scripts. The test data is saved in the txt-file tests/test.txt, and the result data from the exact solvers is saved in the csv-file `progress_data.csv`. 
 
 **Standard execution:**
 ```bash
