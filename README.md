@@ -1,4 +1,4 @@
-#Algorithms for scheduling with many shared resources - Implementation and analysis of an exact algorithm
+# Algorithms for scheduling with many shared resources - Implementation and analysis of an exact algorithm
 
 This repository contains code for the bachelor's thesis project "Algorithms for scheduling with many shared resources - Implementation and analysis of an exact algorithm" at the University of Gothenburg, 2026. 
 
@@ -21,14 +21,14 @@ The `/algos/` directory contains both our own exact solver for the MSRS problem,
 
 Our main contribution is an exact solver based on an integer linear programming (ILP) formulation, together with a machine assignment. We have developed five different versions of the ILP model: one standard and four optimized. 
 
-* **Machine Assignment:**  `algos/machine_assignment.py` - This generates the machine assignment. 
-* **ILP Versions:**
+* **Machine assignment:**  `algos/machine_assignment.py` - This generates the machine assignment. 
+* **ILP versions:**
   * `algos/ILP_STD.py` - The standard, unoptimized ILP formulation.
   * `algos/ILP_LB.py` - Includes a lower bound of the makespan. 
   * `algos/ILP_WS.py` - Uses start values from an approximation algorithm together with a lower bound. **(Note: Requires running an approximation algorithm first).**
   * `algos/ILP_IC.py` - Uses indicator constraints instead of big-M formulations.
   * `algos/ILP_CMB.py` - Combines all previous optimizations. **(Note: Requires running an approximation algorithm first).**
-* **Exact Solvers:**  `algos/exact_solver_X.py` - Complete program for solving the MSRS problem, using `algos/ILP_X.py` together with `algos/machine_assignment.py`.  
+* **Exact solvers:**  `algos/exact_solver_X.py` - Complete program for solving the MSRS problem, using `algos/ILP_X.py` together with `algos/machine_assignment.py`.  
 
 ### Approximation algorithms and heuristics
 To evaluate the performance of our exact solver, we compare it againts approximation algorithms and heuristics.
@@ -53,7 +53,7 @@ You need to install [Gurobi](https://www.gurobi.com) to run the exact solvers.
 
 To run an algorithm or generate a testfile, use the provided bash scripts. The data from the exact solvers is saved in the csv-file `progress_data.csv`. 
 
-**Standard Execution:**
+**Standard execution:**
 ```bash
 # Generate a test file
 ./generate.sh
