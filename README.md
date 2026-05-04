@@ -63,7 +63,7 @@ To run an algorithm or generate a testfile, use the provided bash scripts. The t
 
 ```
 
-**Run exact algorithm with start values:**
+**Run exact solver with start values:**
 ```bash
 #First, run an approximation algorithm whose solution you want as start values (e.g., the 3/2-approximation)
 ./visualize.sh algos/3_over_2.py tests/your_testfile.txt
