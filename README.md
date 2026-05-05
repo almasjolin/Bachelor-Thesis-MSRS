@@ -35,15 +35,15 @@ To evaluate the performance of our exact solver, we compare it againts approxima
 The code for these algorithms was not implemented by us. It is sourced from the "bachelor-thesis-project-MSRS" repository and can be found here: https://github.com/ollelapidus/bachelor-thesis-project-MSRS. 
 
 * **Included algorithms:** 
-* `algo-gen/simulated-annealing.cpp`
-* `algos/simulated-annealing-algo.cpp`
-* `algos/3_over_2.py`
-* `algos/3_over_2_with_downshift.py`
-* `algos/3_over_2_with_enqueue.py`
-* `algos/5_over_3.py`
-* `algos/5_over_3_with_downshift.py`
-* `algos/5_over_3_with_enqueue.py`
-* `algos/enqueue.py`
+    * `algo-gen/simulated-annealing.cpp`
+    * `algos/simulated-annealing-algo.cpp`
+    * `algos/3_over_2.py`
+    * `algos/3_over_2_with_downshift.py`
+    * `algos/3_over_2_with_enqueue.py`
+    * `algos/5_over_3.py`
+    * `algos/5_over_3_with_downshift.py`
+    * `algos/5_over_3_with_enqueue.py`
+    * `algos/enqueue.py`
 
 ## Prerequisites
 
