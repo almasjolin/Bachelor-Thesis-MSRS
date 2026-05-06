@@ -2,13 +2,13 @@
 
 This repository contains code for the bachelor's thesis project "Algorithms for scheduling with many shared resources - Implementation and analysis of an exact algorithm" at the University of Gothenburg, 2026. 
 
-The project aims to analyze and compare different algorithms for the many shared resources scheduling (MSRS) problem. 
+The project aims to implement and analyze an exact solver for the many shared resources scheduling (MSRS) problem. 
 
 ## Project structure
 
 To make it easy to navigate, the project is structured as follows: 
 
-* `/algos/` - Code for the different algorithms for solving the MSRS-problem.
+* `/algos/` - Code for different algorithms for solving the MSRS-problem.
 * `/results/` - Here the data is saved when running an algorithm.
 * `/tests/` - The testfiles used for evaluating the algorithms. 
 * `/utils/` - Code for the test generator and visualization of schedules. 
