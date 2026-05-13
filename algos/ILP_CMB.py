@@ -207,7 +207,7 @@ def ilp_cmb(n,p,m,classes , approx_makespan, approx_t):
     #Save data
     fields = ['Time', 'Incumbent', 'BestBound']
     
-    with open('progress_data.csv', 'w', newline= '') as csvfile: 
+    with open('results/progress_data.csv', 'w', newline= '') as csvfile: 
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         
         writer.writeheader()

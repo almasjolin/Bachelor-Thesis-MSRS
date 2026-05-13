@@ -12,6 +12,7 @@ To make it easy to navigate, the project is structured as follows:
 * `/results/` - Here the data is saved when running an algorithm.
 * `/tests/` - The testfiles used for evaluating the algorithms. 
 * `/utils/` - Code for the test generator and visualization of schedules. 
+* `generate.sh` & `visualize.sh` - Bash scripts for generating test files and running algorithms.
 
 ## Algorithms
 
@@ -31,10 +32,12 @@ Our main contribution is an exact solver based on an integer linear programming 
   * `algos/ILP_HINTS.py` - Same as `algos/ILP_WS.py` but includes variable hints. **(Note: Requires running an approximation algorithm first).**
 * **Exact solvers:**  `algos/exact_solver_X.py` - Complete program for solving the MSRS problem, using `algos/ILP_X.py` together with `algos/machine_assignment.py`.  
 
-### Approximation algorithms and heuristics
-To evaluate the performance of our exact solver, we compare it againts approximation algorithms and heuristics.
-The code for these algorithms was not implemented by us. It is sourced from the "bachelor-thesis-project-MSRS" repository and can be found here: https://github.com/ollelapidus/bachelor-thesis-project-MSRS. 
+## Third-party code and acknowledgements
+To evaluate the performance of our exact solver, we compare it againts approximation algorithms and heuristics. We also rely on certain scripts for test generation and visualization.
 
+The code for these algorithms was not implemented by us. It is sourced from the "bachelor-thesis-project-MSRS" repository and can be found here: https://github.com/ollelapidus/bachelor-thesis-project-MSRS. **We have explicit permission from the author to use and include their code in this project.**
+
+**Sourced files include:**
 * **Included algorithms:** 
     * `algo-gen/simulated-annealing.cpp`
     * `algos/simulated-annealing-algo.cpp`
@@ -46,6 +49,10 @@ The code for these algorithms was not implemented by us. It is sourced from the 
     * `algos/5_over_3_with_enqueue.py`
     * `algos/enqueue.py`
     * `algos/greedy.py`
+* **Scripts and Visualization:**
+    * `generate.sh`
+    * `visualize.sh`
+    * `utils/visualize_by_time_machine.py`
 
 ## Prerequisites
 
@@ -53,7 +60,7 @@ You need to install [Gurobi](https://www.gurobi.com) to run the exact solvers.
 
 ## Usage
 
-To run an algorithm or generate a testfile, use the provided bash scripts. The test data is saved in the txt-file `tests/test.txt`, and the result data from the exact solvers is saved in the csv-file `progress_data.csv`. 
+To run an algorithm or generate a testfile, use the provided bash scripts. The test data is saved in the txt-file `tests/test.txt`, and the result data from the exact solvers is saved in the csv-file `results/progress_data.csv`. 
 
 **Standard execution:**
 ```bash
